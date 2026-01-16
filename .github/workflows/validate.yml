@@ -10,6 +10,7 @@ on:
 
 jobs:
   validate-hacs:
+    if: github.repository == 'exergyheat/ha-integration-bitaxe'
     name: HACS Validation
     runs-on: ubuntu-latest
     steps:
@@ -22,6 +23,7 @@ jobs:
           category: integration
 
   validate-hassfest:
+    if: github.repository == 'exergyheat/ha-integration-bitaxe'
     name: Hassfest Validation
     runs-on: ubuntu-latest
     steps:
